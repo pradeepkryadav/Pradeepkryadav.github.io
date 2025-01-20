@@ -195,6 +195,56 @@ With hands-on experience in technologies like Java, .Net, C++, Python, Mahcine L
 
         <section id="contact">
             <h2>Contact</h2>
+                         <form id="contact-form" style="max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; background: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
+                
+                <div style="grid-column: span 1;">
+                    <label for="name" style="font-weight: bold;">Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required style="width: 70%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;">
+                    <br><label for="email" style="font-weight: bold;">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required style="width: 70%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;">
+                </div>
+                <div style="grid-column: span 1;">
+                    <label for="message" style="font-weight: bold;">Message:</label><br>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="6" required style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+                </div>
+                <div style="grid-column: span 1 / span 2; text-align: right;">
+                    <button type="submit" style="background: linear-gradient(90deg, #4CAF50, #008CBA); color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">Submit</button>
+                </div>
+             
+            </form>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "tDpIdN7cuGPWrwX5h",
+      });
+   })();
+
+    document.querySelector("#contact-form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        const serviceID = "service_pradeepkryadav"; // Replace with your service ID
+        const templateID = "template1_pradeepkryadav"; // Replace with your template ID
+
+        const templateParams = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            message: document.getElementById("message").value,
+        };
+
+        emailjs.send(serviceID, templateID, templateParams)
+            .then(response => {
+                alert("Message sent successfully!");
+                console.log(response);
+            })
+            .catch(error => {
+                alert("Failed to send message. Please try again.");
+                console.error(error);
+            });
+    });
+</script>
             <p align="center">Feel free to reach out to me at <a href="mailto:pradeepkryadav@gmail.com<">pradeepkryadav@gmail.com</a>.</p>
             <div class="social-icons">
 
@@ -203,7 +253,7 @@ With hands-on experience in technologies like Java, .Net, C++, Python, Mahcine L
                 <a href="https://github.com/pradeepkryadav" class="github" target="_blank"></a>
                 <a href="https://twitter.com/pradeepkryadav" class="twitter" target="_blank"></a>
                 <a href="https://facebook.com/pradeepkryadav" class="facebook" target="_blank"></a>
-                <a href="https://instagram.com/yourhandle" class="instagram" target="_blank"></a>
+                <a href="https://instagram.com/pradeepkry" class="instagram" target="_blank"></a>
             </div>
         </section>
     </div>
