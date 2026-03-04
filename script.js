@@ -380,3 +380,66 @@ window.addEventListener('scroll', debouncedHighlight);
 console.log('%c👋 Welcome to my portfolio!', 'color: #2563eb; font-size: 20px; font-weight: bold;');
 console.log('%cBuilt with ❤️ using vanilla JavaScript', 'color: #6b7280; font-size: 14px;');
 console.log('%cInterested in the code? Check out the repository!', 'color: #3b82f6; font-size: 14px;');
+
+// ==================== SOCIAL SHARING ====================
+function shareProfile() {
+    const shareData = {
+        title: 'Pradeep Kumar - Performance Engineering Expert',
+        text: 'Check out Pradeep Kumar\'s portfolio - Performance Engineering Expert at SAP with 31+ research papers on cloud computing, JVM optimization, and AI/ML.',
+        url: 'https://pradeepkryadav.github.io/'
+    };
+
+    // Check if Web Share API is supported
+    if (navigator.share) {
+        navigator.share(shareData)
+            .then(() => console.log('Profile shared successfully'))
+            .catch((error) => console.log('Error sharing:', error));
+    } else {
+        // Fallback: Show share modal with options
+        showShareModal(shareData);
+    }
+}
+
+function showShareModal(shareData) {
+    const modal = document.createElement('div');
+    modal.className = 'share-modal';
+    modal.innerHTML = `
+        <div class="share-modal-content">
+            <button class="share-modal-close" onclick="this.parentElement.parentElement.remove()">&times;</button>
+            <h3>Share Profile</h3>
+            <div class="share-buttons">
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareData.url)}"
+                   target="_blank" rel="noopener noreferrer" class="share-btn linkedin-share">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(shareData.text)}&url=${encodeURIComponent(shareData.url)}"
+                   target="_blank" rel="noopener noreferrer" class="share-btn twitter-share">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareData.url)}"
+                   target="_blank" rel="noopener noreferrer" class="share-btn facebook-share">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+                <button onclick="copyToClipboard('${shareData.url}')" class="share-btn copy-link">
+                    <i class="fas fa-link"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(modal);
+
+    // Close modal when clicking outside
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.remove();
+        }
+    });
+}
+
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+        alert('Link copied to clipboard!');
+    }).catch(err => {
+        console.error('Failed to copy:', err);
+    });
+}
