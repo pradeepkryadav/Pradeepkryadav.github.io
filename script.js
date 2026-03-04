@@ -117,6 +117,34 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// ==================== EXPERIENCE TOGGLE ====================
+const toggleExperienceBtn = document.getElementById('toggleExperience');
+const toggleText = document.getElementById('toggleText');
+const toggleIcon = document.getElementById('toggleIcon');
+const hiddenExperience = document.querySelectorAll('.hidden-experience');
+
+if (toggleExperienceBtn) {
+    toggleExperienceBtn.addEventListener('click', () => {
+        const isExpanded = toggleText.textContent === 'Show Less';
+
+        hiddenExperience.forEach(item => {
+            if (isExpanded) {
+                item.classList.remove('show');
+            } else {
+                item.classList.add('show');
+            }
+        });
+
+        if (isExpanded) {
+            toggleText.textContent = 'Show All Experience';
+            toggleIcon.classList.remove('rotated');
+        } else {
+            toggleText.textContent = 'Show Less';
+            toggleIcon.classList.add('rotated');
+        }
+    });
+}
+
 // ==================== INTERSECTION OBSERVER FOR ANIMATIONS ====================
 const observerOptions = {
     threshold: 0.1,
@@ -133,7 +161,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe all cards and sections
-document.querySelectorAll('.stat-card, .publication-card, .award-card, .press-card, .timeline-item').forEach(el => {
+document.querySelectorAll('.stat-card, .publication-card, .award-card, .press-card, .timeline-item, .expertise-card, .membership-card, .social-work-card').forEach(el => {
     observer.observe(el);
 });
 
