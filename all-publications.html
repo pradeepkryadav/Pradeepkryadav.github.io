@@ -41,11 +41,11 @@
     <section class="page-header">
         <div class="container">
             <h1 class="page-title">All Research Publications</h1>
-            <p class="page-subtitle">31+ published papers in performance engineering, cloud computing, and sustainable computing</p>
+            <p class="page-subtitle">20 published papers in performance engineering, cloud computing, JVM optimization, and AI/ML applications</p>
             <div class="stats-row">
                 <div class="stat-item">
                     <i class="fas fa-file-alt"></i>
-                    <span>31+ Papers</span>
+                    <span>20 Papers</span>
                 </div>
                 <div class="stat-item">
                     <i class="fas fa-university"></i>
@@ -69,11 +69,11 @@
                     <input type="text" id="searchPublications" placeholder="Search publications by title or keyword...">
                 </div>
                 <div class="filter-buttons">
-                    <button class="filter-btn active" data-filter="all">All (31)</button>
-                    <button class="filter-btn" data-filter="performance">Performance (12)</button>
-                    <button class="filter-btn" data-filter="cloud">Cloud (8)</button>
-                    <button class="filter-btn" data-filter="jvm">JVM/GC (7)</button>
-                    <button class="filter-btn" data-filter="ai-ml">AI/ML (4)</button>
+                    <button class="filter-btn active" data-filter="all">All (20)</button>
+                    <button class="filter-btn" data-filter="performance">Performance (15)</button>
+                    <button class="filter-btn" data-filter="cloud">Cloud (12)</button>
+                    <button class="filter-btn" data-filter="jvm">JVM/GC (6)</button>
+                    <button class="filter-btn" data-filter="ai-ml">AI/ML (6)</button>
                 </div>
             </div>
 
@@ -271,11 +271,453 @@
                     </div>
                 </div>
 
-                <!-- More publications continue... -->
-                <p class="publications-note" style="text-align: center; margin: 3rem 0; color: var(--text-secondary);">
-                    <em>Additional 25+ publications loading... Complete list includes papers on AI/ML optimization,
-                    cloud architecture, sustainable computing, and more.</em>
-                </p>
+                <!-- Publication 7 -->
+                <div class="publication-item" data-category="ai-ml jvm">
+                    <div class="publication-number">07</div>
+                    <div class="publication-content">
+                        <h3>The Role of Machine Learning in Optimizing Garbage Collection</h3>
+                        <div class="publication-meta-row">
+                            <span class="pub-journal">IJSAT</span>
+                            <span class="pub-year">2025</span>
+                            <span class="pub-citations">Research Paper ID: 1642</span>
+                        </div>
+                        <p class="publication-abstract">
+                            Explores how AI and machine learning techniques can be applied to optimize garbage collection policies in JVM environments.
+                            Proposes ML-driven predictive models for heap sizing, GC algorithm selection, and pause time optimization. Demonstrates
+                            15-20% improvement in GC efficiency through intelligent pattern recognition and adaptive tuning based on application workload characteristics.
+                        </p>
+                        <div class="publication-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Garbage Collection</span>
+                            <span class="tag">JVM</span>
+                            <span class="tag">AI Optimization</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="https://www.ijsat.org/research-paper.php?id=1642" target="_blank" class="btn-pub btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Read Paper
+                            </a>
+                            <button class="btn-pub btn-share" onclick="sharePublication('The Role of Machine Learning in Optimizing Garbage Collection', 'https://www.ijsat.org/research-paper.php?id=1642')">
+                                <i class="fas fa-share-alt"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 8 -->
+                <div class="publication-item" data-category="performance">
+                    <div class="publication-number">08</div>
+                    <div class="publication-content">
+                        <h3>Optimizing Multithreaded Applications: Techniques and Strategies</h3>
+                        <div class="publication-meta-row">
+                            <span class="pub-journal">All Multidisciplinary Journal</span>
+                            <span class="pub-year">2025</span>
+                            <span class="pub-citations">E-43-20.1</span>
+                        </div>
+                        <p class="publication-abstract">
+                            Comprehensive guide to optimizing multithreaded applications for maximum performance and resource utilization. Covers thread pooling,
+                            lock-free algorithms, concurrent data structures, and thread synchronization patterns. Includes real-world case studies from
+                            high-throughput enterprise systems demonstrating 40-60% performance improvements through proper thread management.
+                        </p>
+                        <div class="publication-tags">
+                            <span class="tag">Multithreading</span>
+                            <span class="tag">Concurrency</span>
+                            <span class="tag">Performance</span>
+                            <span class="tag">Optimization</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="https://www.allmultidisciplinaryjournal.com/uploads/archives/20250317143958_E-43-20.1.pdf" target="_blank" class="btn-pub btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Read Paper
+                            </a>
+                            <button class="btn-pub btn-share" onclick="sharePublication('Optimizing Multithreaded Applications', 'https://www.allmultidisciplinaryjournal.com/uploads/archives/20250317143958_E-43-20.1.pdf')">
+                                <i class="fas fa-share-alt"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 9 -->
+                <div class="publication-item" data-category="jvm performance">
+                    <div class="publication-number">09</div>
+                    <div class="publication-content">
+                        <h3>GC Tuning with THP and PreTouch for SAP SuccessFactors Learning</h3>
+                        <div class="publication-meta-row">
+                            <span class="pub-journal">IJSAT</span>
+                            <span class="pub-year">2025</span>
+                            <span class="pub-citations">Research Paper ID: 1740</span>
+                        </div>
+                        <p class="publication-abstract">
+                            Advanced garbage collection tuning using Transparent Huge Pages (THP) and memory pretouch techniques for enterprise applications.
+                            Demonstrates how OS-level optimizations combined with JVM tuning can dramatically reduce GC pause times and improve application
+                            responsiveness. Real-world implementation in SAP SuccessFactors Learning shows 25% reduction in GC overhead.
+                        </p>
+                        <div class="publication-tags">
+                            <span class="tag">GC Tuning</span>
+                            <span class="tag">THP</span>
+                            <span class="tag">JVM</span>
+                            <span class="tag">SAP SuccessFactors</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="https://www.ijsat.org/research-paper.php?id=1740" target="_blank" class="btn-pub btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Read Paper
+                            </a>
+                            <button class="btn-pub btn-share" onclick="sharePublication('GC Tuning with THP and PreTouch', 'https://www.ijsat.org/research-paper.php?id=1740')">
+                                <i class="fas fa-share-alt"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 10 -->
+                <div class="publication-item" data-category="performance cloud">
+                    <div class="publication-number">10</div>
+                    <div class="publication-content">
+                        <h3>Garbage Collection and Sustainability: Energy Efficiency in Computing</h3>
+                        <div class="publication-meta-row">
+                            <span class="pub-journal">All Multidisciplinary Journal</span>
+                            <span class="pub-year">2025</span>
+                            <span class="pub-citations">E-44-20.1</span>
+                        </div>
+                        <p class="publication-abstract">
+                            Research on sustainable computing practices focusing on energy-efficient garbage collection and green computing. Analyzes the
+                            environmental impact of different GC algorithms and proposes strategies to reduce power consumption in data centers. Demonstrates
+                            correlation between GC efficiency and carbon footprint, with recommendations for environmentally conscious system design.
+                        </p>
+                        <div class="publication-tags">
+                            <span class="tag">Sustainability</span>
+                            <span class="tag">Green Computing</span>
+                            <span class="tag">Energy Efficiency</span>
+                            <span class="tag">Garbage Collection</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="https://www.allmultidisciplinaryjournal.com/uploads/archives/20250317161801_E-44-20.1.pdf" target="_blank" class="btn-pub btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Read Paper
+                            </a>
+                            <button class="btn-pub btn-share" onclick="sharePublication('Garbage Collection and Sustainability', 'https://www.allmultidisciplinaryjournal.com/uploads/archives/20250317161801_E-44-20.1.pdf')">
+                                <i class="fas fa-share-alt"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 11 -->
+                <div class="publication-item" data-category="ai-ml performance">
+                    <div class="publication-number">11</div>
+                    <div class="publication-content">
+                        <h3>Optimizing Memory Access in Modern Computing: Applications in Machine Learning and Big Data</h3>
+                        <div class="publication-meta-row">
+                            <span class="pub-journal">IJAIDR</span>
+                            <span class="pub-year">2025</span>
+                            <span class="pub-citations">Research Paper ID: 1270</span>
+                        </div>
+                        <p class="publication-abstract">
+                            Explores memory access optimization techniques for ML and big data workloads. Covers cache-aware algorithms, NUMA
+                            architecture optimization, memory prefetching, and data locality strategies. Demonstrates significant performance
+                            improvements in training large neural networks and processing massive datasets through intelligent memory management.
+                        </p>
+                        <div class="publication-tags">
+                            <span class="tag">Memory Optimization</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Big Data</span>
+                            <span class="tag">Cache Management</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="https://www.ijaidr.com/research-paper.php?id=1270" target="_blank" class="btn-pub btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Read Paper
+                            </a>
+                            <button class="btn-pub btn-share" onclick="sharePublication('Optimizing Memory Access in Modern Computing', 'https://www.ijaidr.com/research-paper.php?id=1270')">
+                                <i class="fas fa-share-alt"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 12 -->
+                <div class="publication-item" data-category="performance">
+                    <div class="publication-number">12</div>
+                    <div class="publication-content">
+                        <h3>High-Performance Logging for Scalable Systems: A Comprehensive Study of Log4j Optimization</h3>
+                        <div class="publication-meta-row">
+                            <span class="pub-journal">IJSAT</span>
+                            <span class="pub-year">2025</span>
+                            <span class="pub-citations">Research Paper ID: 1899</span>
+                        </div>
+                        <p class="publication-abstract">
+                            Comprehensive study of Log4j optimization techniques for high-throughput enterprise systems. Addresses logging performance
+                            bottlenecks through asynchronous appenders, buffer tuning, and conditional logging. Proposes best practices for production
+                            logging that minimize performance impact while maintaining observability. Case studies show 80% reduction in logging overhead.
+                        </p>
+                        <div class="publication-tags">
+                            <span class="tag">Logging</span>
+                            <span class="tag">Log4j</span>
+                            <span class="tag">Performance</span>
+                            <span class="tag">Scalability</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="https://www.ijsat.org/research-paper.php?id=1899" target="_blank" class="btn-pub btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Read Paper
+                            </a>
+                            <button class="btn-pub btn-share" onclick="sharePublication('High-Performance Logging for Scalable Systems', 'https://www.ijsat.org/research-paper.php?id=1899')">
+                                <i class="fas fa-share-alt"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 13 -->
+                <div class="publication-item" data-category="performance">
+                    <div class="publication-number">13</div>
+                    <div class="publication-content">
+                        <h3>Leveraging CPU Features for Computational Efficiency: A Deep Dive into Modern Optimization</h3>
+                        <div class="publication-meta-row">
+                            <span class="pub-journal">IJFMR</span>
+                            <span class="pub-year">2025</span>
+                            <span class="pub-citations">Research Paper ID: 37540</span>
+                        </div>
+                        <p class="publication-abstract">
+                            Deep dive into modern CPU features and their impact on computational efficiency. Covers SIMD instructions, hardware prefetching,
+                            branch prediction, and cache line optimization. Demonstrates how leveraging processor-specific features can yield 2-3x
+                            performance improvements in compute-intensive applications without algorithmic changes.
+                        </p>
+                        <div class="publication-tags">
+                            <span class="tag">CPU Optimization</span>
+                            <span class="tag">SIMD</span>
+                            <span class="tag">Performance</span>
+                            <span class="tag">Hardware Features</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="https://www.ijfmr.com/research-paper.php?id=37540" target="_blank" class="btn-pub btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Read Paper
+                            </a>
+                            <button class="btn-pub btn-share" onclick="sharePublication('Leveraging CPU Features for Computational Efficiency', 'https://www.ijfmr.com/research-paper.php?id=37540')">
+                                <i class="fas fa-share-alt"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 14 -->
+                <div class="publication-item" data-category="cloud performance">
+                    <div class="publication-number">14</div>
+                    <div class="publication-content">
+                        <h3>High-Throughput Event Ingestion with Kafka: Performance Optimization for Large-Scale Systems</h3>
+                        <div class="publication-meta-row">
+                            <span class="pub-journal">ISJEM</span>
+                            <span class="pub-year">2025</span>
+                            <span class="pub-citations">Performance Optimization Guide</span>
+                        </div>
+                        <p class="publication-abstract">
+                            Performance optimization guide for Apache Kafka in large-scale event-driven architectures. Covers producer/consumer tuning,
+                            partition strategies, replication optimization, and cluster sizing. Real-world implementations demonstrate handling millions
+                            of events per second with sub-second latency through strategic configuration and architecture design.
+                        </p>
+                        <div class="publication-tags">
+                            <span class="tag">Kafka</span>
+                            <span class="tag">Event Streaming</span>
+                            <span class="tag">High Throughput</span>
+                            <span class="tag">Distributed Systems</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="https://isjem.com/download/high-throughput-event-ingestion-with-kafka-performance-optimization-strategies-for-large-scale-systems/" target="_blank" class="btn-pub btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Read Paper
+                            </a>
+                            <button class="btn-pub btn-share" onclick="sharePublication('High-Throughput Event Ingestion with Kafka', 'https://isjem.com/download/high-throughput-event-ingestion-with-kafka-performance-optimization-strategies-for-large-scale-systems/')">
+                                <i class="fas fa-share-alt"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 15 -->
+                <div class="publication-item" data-category="cloud ai-ml">
+                    <div class="publication-number">15</div>
+                    <div class="publication-content">
+                        <h3>Advanced Search and Data Processing Architecture for SAP SuccessFactors Learning</h3>
+                        <div class="publication-meta-row">
+                            <span class="pub-journal">URF Journals</span>
+                            <span class="pub-year">2025</span>
+                            <span class="pub-citations">Open Access</span>
+                        </div>
+                        <p class="publication-abstract">
+                            Architecture design for advanced search and data processing using Databricks, Kafka, and Elasticsearch in SAP SuccessFactors
+                            Learning. Demonstrates how modern data pipeline technologies enable real-time search indexing, personalized recommendations,
+                            and analytics at scale. Implementation achieves 60% improvement in search performance and relevance.
+                        </p>
+                        <div class="publication-tags">
+                            <span class="tag">Databricks</span>
+                            <span class="tag">Kafka</span>
+                            <span class="tag">Elasticsearch</span>
+                            <span class="tag">Data Processing</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="https://urfjournals.org/open-access/advanced-search-and-data-processing-architecture-for-sap-successfactors-learning-using-databricks-kafka-and-elastic-search.pdf" target="_blank" class="btn-pub btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Read Paper
+                            </a>
+                            <button class="btn-pub btn-share" onclick="sharePublication('Advanced Search and Data Processing Architecture', 'https://urfjournals.org/open-access/advanced-search-and-data-processing-architecture-for-sap-successfactors-learning-using-databricks-kafka-and-elastic-search.pdf')">
+                                <i class="fas fa-share-alt"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 16 -->
+                <div class="publication-item" data-category="cloud performance">
+                    <div class="publication-number">16</div>
+                    <div class="publication-content">
+                        <h3>Vault Security Framework Optimization for Improved Throughput and Security</h3>
+                        <div class="publication-meta-row">
+                            <span class="pub-journal">IJLRP</span>
+                            <span class="pub-year">2025</span>
+                            <span class="pub-citations">Research Paper ID: 1410</span>
+                        </div>
+                        <p class="publication-abstract">
+                            Optimization strategies for HashiCorp Vault in enterprise environments balancing security and performance. Covers secret
+                            caching, token lifecycle management, seal/unseal optimization, and high-availability configurations. Demonstrates techniques
+                            to reduce secret retrieval latency by 70% while maintaining security compliance and audit requirements.
+                        </p>
+                        <div class="publication-tags">
+                            <span class="tag">Security</span>
+                            <span class="tag">Vault</span>
+                            <span class="tag">Performance</span>
+                            <span class="tag">Enterprise</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="https://www.ijlrp.com/research-paper.php?id=1410" target="_blank" class="btn-pub btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Read Paper
+                            </a>
+                            <button class="btn-pub btn-share" onclick="sharePublication('Vault Security Framework Optimization', 'https://www.ijlrp.com/research-paper.php?id=1410')">
+                                <i class="fas fa-share-alt"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 17 -->
+                <div class="publication-item" data-category="ai-ml cloud">
+                    <div class="publication-number">17</div>
+                    <div class="publication-content">
+                        <h3>Optimizing AI/ML-Based Recommendation Systems for Enterprise Learning Platforms</h3>
+                        <div class="publication-meta-row">
+                            <span class="pub-journal">Quest Journals</span>
+                            <span class="pub-year">2025</span>
+                            <span class="pub-citations">JSES Vol 9, Issue 10</span>
+                        </div>
+                        <p class="publication-abstract">
+                            Optimization techniques for AI/ML-based recommendation engines in enterprise learning platforms. Covers collaborative filtering,
+                            content-based recommendations, hybrid approaches, and real-time personalization. Demonstrates strategies to scale recommendation
+                            systems to millions of users while maintaining sub-100ms response times and high accuracy.
+                        </p>
+                        <div class="publication-tags">
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">Recommendation Systems</span>
+                            <span class="tag">Enterprise Learning</span>
+                            <span class="tag">Personalization</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="https://www.questjournals.org/jses/v9-i10.html" target="_blank" class="btn-pub btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Read Paper
+                            </a>
+                            <button class="btn-pub btn-share" onclick="sharePublication('Optimizing AI/ML-Based Recommendation Systems', 'https://www.questjournals.org/jses/v9-i10.html')">
+                                <i class="fas fa-share-alt"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 18 -->
+                <div class="publication-item" data-category="ai-ml cloud">
+                    <div class="publication-number">18</div>
+                    <div class="publication-content">
+                        <h3>Adaptive Workload Modeling using AI for Performance Testing of Cloud-Based Multitenant Applications</h3>
+                        <div class="publication-meta-row">
+                            <span class="pub-journal">IJIRCT</span>
+                            <span class="pub-year">2025</span>
+                            <span class="pub-citations">Paper ID: 2503109</span>
+                        </div>
+                        <p class="publication-abstract">
+                            AI-driven approach to workload modeling for performance testing in multitenant cloud environments. Uses machine learning to
+                            predict user behavior patterns, generate realistic test scenarios, and identify performance bottlenecks before production.
+                            Demonstrates 50% reduction in performance testing time while improving test coverage and accuracy.
+                        </p>
+                        <div class="publication-tags">
+                            <span class="tag">AI</span>
+                            <span class="tag">Performance Testing</span>
+                            <span class="tag">Cloud</span>
+                            <span class="tag">Multitenancy</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="https://www.ijirct.org/viewPaper.php?paperId=2503109" target="_blank" class="btn-pub btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Read Paper
+                            </a>
+                            <button class="btn-pub btn-share" onclick="sharePublication('Adaptive Workload Modeling using AI', 'https://www.ijirct.org/viewPaper.php?paperId=2503109')">
+                                <i class="fas fa-share-alt"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 19 -->
+                <div class="publication-item" data-category="performance cloud">
+                    <div class="publication-number">19</div>
+                    <div class="publication-content">
+                        <h3>Optimizing E-Banking Application Performance: A Case Study on Infosys Finacle eBanking</h3>
+                        <div class="publication-meta-row">
+                            <span class="pub-journal">IJIRCT</span>
+                            <span class="pub-year">2025</span>
+                            <span class="pub-citations">Paper ID: 2505046</span>
+                        </div>
+                        <p class="publication-abstract">
+                            Real-world case study on optimizing e-banking application performance for Finacle eBanking platform. Covers database query
+                            optimization, connection pool tuning, caching strategies, and frontend performance. Achieved 70% reduction in login time and
+                            improved throughput to support 3M+ concurrent users, transforming customer experience for major global banks.
+                        </p>
+                        <div class="publication-tags">
+                            <span class="tag">E-Banking</span>
+                            <span class="tag">Finacle</span>
+                            <span class="tag">Performance</span>
+                            <span class="tag">Case Study</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="https://www.ijirct.org/viewPaper.php?paperId=2505046" target="_blank" class="btn-pub btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Read Paper
+                            </a>
+                            <button class="btn-pub btn-share" onclick="sharePublication('Optimizing E-Banking Application Performance', 'https://www.ijirct.org/viewPaper.php?paperId=2505046')">
+                                <i class="fas fa-share-alt"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 20 -->
+                <div class="publication-item" data-category="performance cloud">
+                    <div class="publication-number">20</div>
+                    <div class="publication-content">
+                        <h3>User Experience Optimization in SAP SuccessFactors Learning: A Caching-Driven Approach</h3>
+                        <div class="publication-meta-row">
+                            <span class="pub-journal">IJLRP</span>
+                            <span class="pub-year">2025</span>
+                            <span class="pub-citations">Research Paper ID: 1585</span>
+                        </div>
+                        <p class="publication-abstract">
+                            Caching-driven approach to enhance perceived performance and user experience in SAP SuccessFactors Learning platform.
+                            Introduces multi-level caching architecture with LRU eviction, intelligent cache warming, and session-aware caching.
+                            Demonstrates significant improvements in page load times and user satisfaction scores through strategic cache placement.
+                        </p>
+                        <div class="publication-tags">
+                            <span class="tag">User Experience</span>
+                            <span class="tag">Caching</span>
+                            <span class="tag">SAP SuccessFactors</span>
+                            <span class="tag">Performance</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="https://www.ijlrp.com/research-paper.php?id=1585" target="_blank" class="btn-pub btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Read Paper
+                            </a>
+                            <button class="btn-pub btn-share" onclick="sharePublication('User Experience Optimization in SAP SuccessFactors Learning', 'https://www.ijlrp.com/research-paper.php?id=1585')">
+                                <i class="fas fa-share-alt"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
