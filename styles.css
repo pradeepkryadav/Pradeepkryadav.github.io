@@ -865,8 +865,8 @@ a:hover {
 }
 
 .social-work-image-badge {
-    width: 150px;
-    height: 150px;
+    width: 450px;
+    height: 450px;
     margin: 0 auto var(--spacing-md);
     border-radius: var(--radius-lg);
     overflow: hidden;
@@ -1720,8 +1720,9 @@ a:hover {
 
     /* Social Work Images Responsive */
     .social-work-image-badge {
-        width: 150px;
-        height: 150px;
+        width: 100%;
+        max-width: 350px;
+        height: 350px;
     }
 
     /* Awards page responsive */
