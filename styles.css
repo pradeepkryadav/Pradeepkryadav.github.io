@@ -864,54 +864,20 @@ a:hover {
     box-shadow: var(--shadow-xl);
 }
 
-.social-work-image {
-    width: 100%;
-    margin-bottom: var(--spacing-lg);
-    border-radius: var(--border-radius);
+.social-work-image-small {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto var(--spacing-md);
+    border-radius: 50%;
     overflow: hidden;
+    border: 3px solid var(--primary-color);
 }
 
-.social-work-img {
+.social-work-img-small {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
-    border-radius: var(--border-radius);
-    object-fit: cover;
-    max-height: 300px;
-}
-
-.social-work-image-gallery {
-    width: 100%;
-    margin-bottom: var(--spacing-lg);
-}
-
-.social-work-image-gallery .social-work-img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: var(--border-radius);
-    margin-bottom: var(--spacing-sm);
-}
-
-.gallery-thumbnails {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-sm);
-}
-
-.gallery-thumb {
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
-    border-radius: var(--border-radius);
-    cursor: pointer;
-    transition: var(--transition);
-    border: 2px solid transparent;
-}
-
-.gallery-thumb:hover {
-    border-color: var(--primary-color);
-    transform: scale(1.05);
 }
 
 .social-work-icon {
@@ -1745,18 +1711,10 @@ a:hover {
         text-align: center;
     }
 
-    /* Social Work Gallery Responsive */
-    .social-work-image-gallery .social-work-img {
-        height: 200px;
-    }
-
-    .gallery-thumbnails {
-        grid-template-columns: repeat(3, 1fr);
-        gap: var(--spacing-xs);
-    }
-
-    .gallery-thumb {
-        height: 70px;
+    /* Social Work Images Responsive */
+    .social-work-image-small {
+        width: 100px;
+        height: 100px;
     }
 
     /* Awards page responsive */
