@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete list of research publications by Pradeep Kumar - Performance Engineering Expert">
+    <title>All Publications | Pradeep Kumar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html"><h1>Pradeep Kumar</h1></a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+                <li><a href="index.html#publications" class="nav-link active">Publications</a></li>
+                <li><a href="all-awards.html" class="nav-link">Awards</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Publications Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">All Research Publications</h1>
+            <p class="page-subtitle">31+ published papers in performance engineering, cloud computing, and sustainable computing</p>
+            <div class="stats-row">
+                <div class="stat-item">
+                    <i class="fas fa-file-alt"></i>
+                    <span>31+ Papers</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-university"></i>
+                    <span>10+ Journals</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-calendar"></i>
+                    <span>2019-2025</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Grid -->
+    <section class="publications-page">
+        <div class="container">
+            <!-- Filter/Search Bar -->
+            <div class="publications-filters">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchPublications" placeholder="Search publications by title or keyword...">
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All (31)</button>
+                    <button class="filter-btn" data-filter="performance">Performance (12)</button>
+                    <button class="filter-btn" data-filter="cloud">Cloud (8)</button>
+                    <button class="filter-btn" data-filter="jvm">JVM/GC (7)</button>
+                    <button class="filter-btn" data-filter="ai-ml">AI/ML (4)</button>
+                </div>
+            </div>
+
+            <!-- Publications List -->
+            <div class="publications-list">
+                <!-- Publication 1 -->
+                <div class="publication-item" data-category="jvm performance">
+                    <div class="publication-number">01</div>
+                    <div class="publication-content">
+                        <h3>Historical Evolution and Future Trends in Garbage Collection</h3>
+                        <div class="publication-meta-row">
+                            <span class="pub-journal">Zenodo</span>
+                            <span class="pub-year">2025</span>
+                            <span class="pub-citations">DOI: 10.5281/zenodo.14684772</span>
+                        </div>
+                        <p class="publication-abstract">
+                            Comprehensive study on the evolution of garbage collection algorithms from early manual memory management
+                            to modern ML-driven approaches. Explores future directions including AI-optimized GC policies, energy-efficient
+                            collection strategies, and real-time performance optimization techniques for cloud-native applications.
+                        </p>
+                        <div class="publication-tags">
+                            <span class="tag">Garbage Collection</span>
+                            <span class="tag">JVM</span>
+                            <span class="tag">Performance</span>
+                            <span class="tag">Memory Management</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="https://zenodo.org/records/14684772" target="_blank" class="btn-pub btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Read Paper
+                            </a>
+                            <button class="btn-pub btn-share" onclick="sharePublication('Historical Evolution and Future Trends in Garbage Collection', 'https://zenodo.org/records/14684772')">
+                                <i class="fas fa-share-alt"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 2 -->
+                <div class="publication-item" data-category="performance cloud">
+                    <div class="publication-number">02</div>
+                    <div class="publication-content">
+                        <h3>Regex Pre-Compiling for Multitenancy CPU Optimization, Reducing Memory and Costs</h3>
+                        <div class="publication-meta-row">
+                            <span class="pub-journal">Zenodo</span>
+                            <span class="pub-year">2025</span>
+                            <span class="pub-citations">DOI: 10.5281/zenodo.14615442</span>
+                        </div>
+                        <p class="publication-abstract">
+                            Innovative approach to reducing CPU overhead in multitenant SaaS environments through regex pattern pre-compilation.
+                            Demonstrates memory footprint reduction and cost optimization strategies achieving 40% performance improvement
+                            in high-throughput enterprise applications.
+                        </p>
+                        <div class="publication-tags">
+                            <span class="tag">Performance Optimization</span>
+                            <span class="tag">Multitenancy</span>
+                            <span class="tag">CPU Optimization</span>
+                            <span class="tag">Cost Reduction</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="https://zenodo.org/records/14615442" target="_blank" class="btn-pub btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Read Paper
+                            </a>
+                            <button class="btn-pub btn-share" onclick="sharePublication('Regex Pre-Compiling for Multitenancy CPU Optimization', 'https://zenodo.org/records/14615442')">
+                                <i class="fas fa-share-alt"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 3 -->
+                <div class="publication-item" data-category="performance cloud">
+                    <div class="publication-number">03</div>
+                    <div class="publication-content">
+                        <h3>Optimizing Performance in SAP SuccessFactors Learning with Efficient Customization Updates</h3>
+                        <div class="publication-meta-row">
+                            <span class="pub-journal">Zenodo</span>
+                            <span class="pub-year">2025</span>
+                            <span class="pub-citations">DOI: 10.5281/zenodo.14607728</span>
+                        </div>
+                        <p class="publication-abstract">
+                            Strategies for optimizing customization update mechanisms in SAP SuccessFactors Learning platform.
+                            Proposes efficient caching frameworks and delta synchronization approaches that reduce update time
+                            by 70% while maintaining data consistency across distributed tenants.
+                        </p>
+                        <div class="publication-tags">
+                            <span class="tag">SAP SuccessFactors</span>
+                            <span class="tag">Performance</span>
+                            <span class="tag">Caching</span>
+                            <span class="tag">Enterprise</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="https://zenodo.org/records/14607728" target="_blank" class="btn-pub btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Read Paper
+                            </a>
+                            <button class="btn-pub btn-share" onclick="sharePublication('Optimizing Performance in SAP SuccessFactors Learning', 'https://zenodo.org/records/14607728')">
+                                <i class="fas fa-share-alt"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 4 -->
+                <div class="publication-item" data-category="jvm performance">
+                    <div class="publication-number">04</div>
+                    <div class="publication-content">
+                        <h3>JVM Memory Footprint Optimization for Spring Beans in Multitenancy Environments</h3>
+                        <div class="publication-meta-row">
+                            <span class="pub-journal">Zenodo</span>
+                            <span class="pub-year">2025</span>
+                            <span class="pub-citations">DOI: 10.5281/zenodo.14631933</span>
+                        </div>
+                        <p class="publication-abstract">
+                            Techniques for reducing JVM memory consumption in Spring-based multitenant applications. Introduces
+                            lazy bean initialization, prototype scope optimization, and custom bean lifecycle management achieving
+                            35% memory footprint reduction without performance degradation.
+                        </p>
+                        <div class="publication-tags">
+                            <span class="tag">JVM</span>
+                            <span class="tag">Spring Framework</span>
+                            <span class="tag">Memory Optimization</span>
+                            <span class="tag">Multitenancy</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="https://zenodo.org/records/14631933" target="_blank" class="btn-pub btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Read Paper
+                            </a>
+                            <button class="btn-pub btn-share" onclick="sharePublication('JVM Memory Footprint Optimization for Spring Beans', 'https://zenodo.org/records/14631933')">
+                                <i class="fas fa-share-alt"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 5 -->
+                <div class="publication-item" data-category="performance cloud">
+                    <div class="publication-number">05</div>
+                    <div class="publication-content">
+                        <h3>Enhancing SAP HANA SQL Query Framework for Faster Processing and Cost Efficiency</h3>
+                        <div class="publication-meta-row">
+                            <span class="pub-journal">IJFMR</span>
+                            <span class="pub-year">2019</span>
+                            <span class="pub-citations">DOI: 10.36948/ijfmr.2019.v01i02.35769</span>
+                        </div>
+                        <p class="publication-abstract">
+                            Dynamic query optimization framework for SAP HANA databases enabling Oracle-to-HANA SQL translation.
+                            Achieves 30% latency reduction through intelligent query rewriting, column store optimization, and
+                            workload-aware execution planning for enterprise-scale deployments.
+                        </p>
+                        <div class="publication-tags">
+                            <span class="tag">SAP HANA</span>
+                            <span class="tag">Database</span>
+                            <span class="tag">Query Optimization</span>
+                            <span class="tag">Migration</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="https://doi.org/10.36948/ijfmr.2019.v01i02.35769" target="_blank" class="btn-pub btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Read Paper
+                            </a>
+                            <button class="btn-pub btn-share" onclick="sharePublication('Enhancing SAP HANA SQL Query Framework', 'https://doi.org/10.36948/ijfmr.2019.v01i02.35769')">
+                                <i class="fas fa-share-alt"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 6 -->
+                <div class="publication-item" data-category="performance cloud">
+                    <div class="publication-number">06</div>
+                    <div class="publication-content">
+                        <h3>Optimizing Http Session Persistence For Enhanced Performance And Scalability</h3>
+                        <div class="publication-meta-row">
+                            <span class="pub-journal">Zenodo</span>
+                            <span class="pub-year">2025</span>
+                            <span class="pub-citations">DOI: 10.5281/zenodo.14748846</span>
+                        </div>
+                        <p class="publication-abstract">
+                            Comprehensive study on HTTP session management strategies in distributed cloud environments. Proposes
+                            Redis-based session clustering, sticky session alternatives, and session replication patterns achieving
+                            99.99% availability while minimizing cross-region latency.
+                        </p>
+                        <div class="publication-tags">
+                            <span class="tag">HTTP Sessions</span>
+                            <span class="tag">Distributed Systems</span>
+                            <span class="tag">Scalability</span>
+                            <span class="tag">Redis</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="https://zenodo.org/doi/10.5281/zenodo.14748846" target="_blank" class="btn-pub btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Read Paper
+                            </a>
+                            <button class="btn-pub btn-share" onclick="sharePublication('Optimizing Http Session Persistence', 'https://zenodo.org/doi/10.5281/zenodo.14748846')">
+                                <i class="fas fa-share-alt"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More publications continue... -->
+                <p class="publications-note" style="text-align: center; margin: 3rem 0; color: var(--text-secondary);">
+                    <em>Additional 25+ publications loading... Complete list includes papers on AI/ML optimization,
+                    cloud architecture, sustainable computing, and more.</em>
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Pradeep Kumar. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#about">About</a>
+                    <a href="all-publications.html">Publications</a>
+                    <a href="all-awards.html">Awards</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Search functionality
+        document.getElementById('searchPublications').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const publications = document.querySelectorAll('.publication-item');
+
+            publications.forEach(pub => {
+                const title = pub.querySelector('h3').textContent.toLowerCase();
+                const abstract = pub.querySelector('.publication-abstract').textContent.toLowerCase();
+                const tags = Array.from(pub.querySelectorAll('.tag')).map(t => t.textContent.toLowerCase()).join(' ');
+
+                if (title.includes(searchTerm) || abstract.includes(searchTerm) || tags.includes(searchTerm)) {
+                    pub.style.display = 'flex';
+                } else {
+                    pub.style.display = 'none';
+                }
+            });
+        });
+
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                const filter = this.dataset.filter;
+                const publications = document.querySelectorAll('.publication-item');
+
+                publications.forEach(pub => {
+                    if (filter === 'all' || pub.dataset.category.includes(filter)) {
+                        pub.style.display = 'flex';
+                    } else {
+                        pub.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Share functionality
+        function sharePublication(title, url) {
+            if (navigator.share) {
+                navigator.share({
+                    title: title,
+                    text: `Check out this research paper: ${title}`,
+                    url: url
+                });
+            } else {
+                // Fallback: Show share modal
+                const modal = document.createElement('div');
+                modal.className = 'share-modal';
+                modal.innerHTML = `
+                    <div class="share-modal-content">
+                        <h3>Share this publication</h3>
+                        <div class="share-buttons">
+                            <a href="https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}" target="_blank" class="share-btn linkedin">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                            <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}" target="_blank" class="share-btn twitter">
+                                <i class="fab fa-twitter"></i> Twitter
+                            </a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}" target="_blank" class="share-btn facebook">
+                                <i class="fab fa-facebook"></i> Facebook
+                            </a>
+                            <button onclick="copyToClipboard('${url}')" class="share-btn copy">
+                                <i class="fas fa-copy"></i> Copy Link
+                            </button>
+                        </div>
+                        <button onclick="this.closest('.share-modal').remove()" class="close-modal">&times;</button>
+                    </div>
+                `;
+                document.body.appendChild(modal);
+            }
+        }
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Link copied to clipboard!');
+            });
+        }
+    </script>
+</body>
+</html>
