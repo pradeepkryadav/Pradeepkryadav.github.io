@@ -345,6 +345,19 @@ const debouncedHighlight = debounce(highlightNavLink, 10);
 window.removeEventListener('scroll', highlightNavLink);
 window.addEventListener('scroll', debouncedHighlight);
 
+// ==================== SOCIAL WORK GALLERY ====================
+// Gallery thumbnail click handler
+document.querySelectorAll('.gallery-thumb').forEach(thumb => {
+    thumb.addEventListener('click', function() {
+        const gallery = this.closest('.social-work-image-gallery');
+        const mainImage = gallery.querySelector('.social-work-img');
+        const tempSrc = mainImage.src;
+
+        mainImage.src = this.src;
+        this.src = tempSrc;
+    });
+});
+
 // ==================== CONSOLE MESSAGE ====================
 console.log('%c👋 Welcome to my portfolio!', 'color: #2563eb; font-size: 20px; font-weight: bold;');
 console.log('%cBuilt with ❤️ using vanilla JavaScript', 'color: #6b7280; font-size: 14px;');
