@@ -166,17 +166,29 @@ document.querySelectorAll('.stat-card, .publication-card, .award-card, .press-ca
 });
 
 // ==================== CONTACT FORM ====================
-// Initialize EmailJS
-(function(){
-    emailjs.init({
-        publicKey: "tDpIdN7cuGPWrwX5h",
-    });
-})();
-
 const contactForm = document.getElementById('contactForm');
+
+// Initialize EmailJS when page loads
+window.addEventListener('load', () => {
+    if (typeof emailjs !== 'undefined') {
+        emailjs.init({
+            publicKey: "tDpIdN7cuGPWrwX5h",
+        });
+        console.log('EmailJS initialized successfully');
+    } else {
+        console.error('EmailJS library not loaded');
+    }
+});
 
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
+
+    // Check if EmailJS is available
+    if (typeof emailjs === 'undefined') {
+        alert("Email service is not available. Please try again later.");
+        console.error('EmailJS library not loaded');
+        return;
+    }
 
     const serviceID = "service_pradeepkryadav";
     const templateID = "template1_pradeepkryadav";
@@ -187,6 +199,12 @@ contactForm.addEventListener('submit', (e) => {
         message: document.getElementById('message').value
     };
 
+    // Show loading state
+    const submitButton = contactForm.querySelector('button[type="submit"]');
+    const originalText = submitButton.textContent;
+    submitButton.textContent = 'Sending...';
+    submitButton.disabled = true;
+
     emailjs.send(serviceID, templateID, templateParams)
         .then(response => {
             alert("Message sent successfully! Thank you for reaching out.");
@@ -196,6 +214,11 @@ contactForm.addEventListener('submit', (e) => {
         .catch(error => {
             alert("Failed to send message. Please try again.");
             console.error('FAILED...', error);
+        })
+        .finally(() => {
+            // Reset button state
+            submitButton.textContent = originalText;
+            submitButton.disabled = false;
         });
 });
 
