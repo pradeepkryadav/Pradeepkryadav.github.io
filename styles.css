@@ -864,16 +864,24 @@ a:hover {
     box-shadow: var(--shadow-xl);
 }
 
-.social-work-image-small {
-    width: 120px;
-    height: 120px;
+.social-work-image-badge {
+    width: 100%;
+    max-width: 400px;
+    height: 240px;
     margin: 0 auto var(--spacing-md);
-    border-radius: 50%;
+    border-radius: var(--radius-lg);
     overflow: hidden;
-    border: 3px solid var(--primary-color);
+    border: 2px solid var(--border-color);
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.social-work-img-small {
+.social-work-image-badge:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.social-work-img-badge {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1712,9 +1720,9 @@ a:hover {
     }
 
     /* Social Work Images Responsive */
-    .social-work-image-small {
-        width: 100px;
-        height: 100px;
+    .social-work-image-badge {
+        max-width: 100%;
+        height: 200px;
     }
 
     /* Awards page responsive */
