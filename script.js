@@ -166,29 +166,37 @@ document.querySelectorAll('.stat-card, .publication-card, .award-card, .press-ca
 });
 
 // ==================== CONTACT FORM ====================
+// Initialize EmailJS
+(function(){
+    emailjs.init({
+        publicKey: "tDpIdN7cuGPWrwX5h",
+    });
+})();
+
 const contactForm = document.getElementById('contactForm');
 
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const formData = {
+    const serviceID = "service_pradeepkryadav";
+    const templateID = "template1_pradeepkryadav";
+
+    const templateParams = {
         name: document.getElementById('name').value,
         email: document.getElementById('email').value,
         message: document.getElementById('message').value
     };
 
-    // Here you would typically send the form data to a server
-    // For now, we'll just show an alert
-    alert('Thank you for your message! This is a demo form. To enable real form submission, you\'ll need to integrate with a backend service or email provider.');
-
-    // Reset form
-    contactForm.reset();
-
-    // In a real application, you might use:
-    // - FormSpree: https://formspree.io/
-    // - Netlify Forms: https://www.netlify.com/products/forms/
-    // - EmailJS: https://www.emailjs.com/
-    // - Your own backend API
+    emailjs.send(serviceID, templateID, templateParams)
+        .then(response => {
+            alert("Message sent successfully! Thank you for reaching out.");
+            console.log('SUCCESS!', response.status, response.text);
+            contactForm.reset();
+        })
+        .catch(error => {
+            alert("Failed to send message. Please try again.");
+            console.error('FAILED...', error);
+        });
 });
 
 // ==================== TYPING EFFECT (Optional Enhancement) ====================
