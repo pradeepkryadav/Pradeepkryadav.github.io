@@ -172,7 +172,7 @@ const contactForm = document.getElementById('contactForm');
 window.addEventListener('load', () => {
     if (typeof emailjs !== 'undefined') {
         emailjs.init({
-            publicKey: "tDpIdN7cuGPWrwX5h",
+            publicKey: "Ksg4Pu3z6-u6xKiB6",
         });
         console.log('EmailJS initialized successfully');
     } else {
